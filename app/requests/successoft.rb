@@ -1,0 +1,21 @@
+class SuccesSoft
+  extend ApplicationLogger
+  
+  use Rack::Flash
+  use Rack::ShowExceptions
+  use Rack::CommonLogger, logger_file!
+  
+  set :root, File.expand_path(File.join(File.dirname(__FILE__), '..', '..'))
+  set :views, Proc.new { File.join(root, 'app', "views") }
+  set :public, Proc.new { File.join(root, "public") }
+  set :logging, false
+  
+  helpers do
+    include Helpers
+  end
+
+  get '/' do
+    haml :index
+  end
+  
+end
