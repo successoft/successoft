@@ -1,0 +1,136 @@
+/*
+*Autor: Diego Muniz e Jefferson Monteiro
+*Empresa: WebMais Desenvolvimento parar Internet
+*/
+
+* {font-family: Verdana; margin: 0; padding: 0;}
+a, p {text-decoration: none;}
+li {list-style-type: none;}
+h2 , h3, h4 {font-weight: lighter;}
+img {border: none;}
+body {}
+.clear {clear: both;}
+input{border:none; border:0;}
+
+#site {}
+
+
+#header {width: 900px; margin: 0 auto; height: 125px;}
+#header h1 {width: 294px; float: left;}
+#header h1 a {display: block; background: url(../images/logo.png) no-repeat; height: 64px; width: 294px; text-indent: -99999px; margin: 35px 0 0 5px; font-size: 0.2px;}
+
+#menu {font-size: 14px; }
+#menu .nav {width: 420px; float: right; margin-top: 65px;}
+#menu .nav li {display: inline; margin:0 10px;}
+#menu .top li a {color: #000000;}
+
+
+#content {width: 900px; margin: 0 auto; margin-bottom: 170px;}
+#content h2 { font-size: 30px;  }
+#content .banner { }
+#content .boxes {margin-top: 40px;}
+#content .boxes .box {width: 270px; height: 225px; float: left; margin-bottom: 170px;}
+#content .boxes .item1 {margin-right: 44px; }
+#content .boxes .box h2 {color: #a5ce27; background: url(../images/title_box.png) no-repeat; text-indent: 65px; height: 41px; letter-spacing: -3px;}
+#content .boxes .box p {font-size: 14px; font-style: Arial; margin: 10px 5px; text-align: justify;}
+#content .boxes .box a {float: right; font-size: 14px; font-style: Arial; color: #1975d4; }
+#content .boxes .item2 {}
+
+
+#footer {height: 205px; background-color: #10152d; color: #ffffff;}
+#footer .footer {width: 900px; margin: 0 auto;}
+#footer .footer .submenu {float: left; margin-top: 20px;}
+#footer .footer .submenu .nav li {display: inline; margin:0 10px; font-size: 14px;}
+#footer .footer .submenu .nav li a {color: #ffffff;}
+
+#footer .footer .webmais {margin-top: 10px; float:right;}
+
+#footer .footer .address {margin-top: 55px; float: left; font-size: 14px; font-family: Verdana; width: 490px;}
+#footer .footer .address span {line-height: 25px;}
+#footer .footer .address p {margin-top: 25px; }
+
+#footer .footer .logo { float: right; margin-top: 20px;}
+
+
+#about { }
+#about p { font-size: 14px; color: #3c3c3c; text-align: justify; text-indent: 35px; }
+#about h2 {background: url(../images/int_title_box.png) no-repeat; color: #4c78a7; text-indent: 60px; height: 41px; letter-spacing: -3px; margin: 40px 0; width: 269px; }
+#about .sobre {margin: 0 30px 65px 0;} 
+#about .sobre h2 {} 
+#about .sobre  p { margin-right: 20px;} 
+#about .metod { }
+#about .metod h2 {}
+#about .metod  p {width: 460px; text-align: justify; float: left; margin-bottom: 30px; }
+#about .metod img {margin: -60px 0 0 20px;}
+
+
+#services  {margin-top: 40px; }
+#services h2 { letter-spacing: -3px; }
+#services p { font-size: 14px; color: #3c3c3c; text-align: justify; text-indent: 35px;}
+#services .servicos {}
+#services .servicos p { margin: 45px 20px 35px 0; }
+#services .servicos ul {margin: 0 0 55px 35px;}
+#services .servicos ul li {color: #3c3c3c; font-size: 16px;  font-weight: bold; background: url(../images/button.jpg) left bottom no-repeat; text-indent: 15px; margin-bottom: 25px; line-height: 12px; }
+#services .servicos h2{ background: url(../images/int_title_box2.png) no-repeat; height: 41px; width: 345px; text-indent: 60px; color: #4c78a7;}
+#services .clientes {}
+#services .clientes h2{ background: url(../images/int_title_box.png) no-repeat; height: 41px; width: 269px; text-indent: 60px; color: #4c78a7; margin-bottom: 45px;}
+
+#contact {}
+#contact .talk {}
+#contact .talk h2{ background: url(../images/int_title_box.png) no-repeat; height: 41px; width: 269px; text-indent: 60px; color: #4c78a7; margin-bottom: 45px; letter-spacing: -3px; margin-top: 40px; } 
+
+#contact .form.contato { font-family: verdana; font-size: 18px;  margin:0 auto; width: 420px;}
+#contact .form.contato form {margin-left: 20px; display: inline; }
+	
+
+	.form.contato input[type=text], .form.contato textarea {
+		border: 1px solid #ccc;
+		padding: 4px;
+		font-family: verdana;
+		font-size: 18px;
+		color: #85a138;
+		background:#e3e3e3;
+		-moz-border-radius: 3px;
+	    -webkit-border-radius: 3px;
+		-opera-border-radius: 3px;
+		width: 410px; 
+		margin: 3px 0 8px 0;
+	}
+	
+	
+.form.contato textarea { overflow: auto; height: auto; min-height: 80px; }
+.form.contato textarea.selected, .form.contato input[type=text].selected { border: 2px solid #ba2222; margin: 8px 1px 1px 1px;	}
+	
+	input.submit{ /*modificar o estilo do botao*/
+		font-size:18px;
+        font-family:Verdana;
+        color:white;
+		/*font-weight:bold;*/
+        background:#4c7196;
+        border:0px;
+        width:100px;
+        height:32px;
+		-moz-border-radius: 3px;
+	    -webkit-border-radius: 3px;
+		cursor: pointer;
+		outline: 0px;
+		padding: 2px;
+		color: #e3e3e3;
+	}
+	
+	input.submit:hover, input.submit:focus {
+		background: #396088;
+	}	
+	
+	input.submit:active {
+		background: #1c436a;
+	}
+	
+.form.contato label { display: block; margin: 1px 0 2px 0; color: #46688a;} 
+.form.contato label span.required { color: red; }
+.form span {font-size:10px; }
+	
+
+.submit { margin-top: 30px; float: right; }
+
+
