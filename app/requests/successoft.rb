@@ -10,6 +10,8 @@ class SuccesSoft
   set :public, Proc.new { File.join(root, "public") }
   set :logging, false
   
+  enable :sessions 
+  
   helpers do
     include Helpers
   end
