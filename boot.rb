@@ -14,5 +14,5 @@ Bundler.require
 
 require 'config/environment'
 Configuration.config do |config|
-  config.load_paths = %w(. app/helpers app/views app/requests)
+  config.load_paths = %w(. app/helpers app/lib app/views app/requests)
 end
