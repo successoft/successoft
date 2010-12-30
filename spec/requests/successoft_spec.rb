@@ -9,7 +9,12 @@ describe Sinatra::Application do
 
   describe 'test routes' do
     
-    %w(about services contact).each do |page|
+    it "should respond to /" do
+      get '/'
+      last_response.should be_ok
+    end
+    
+    %w(index about services contact).each do |page|
       it "should respond to /#{page}" do
         get "/#{page}"
         last_response.should be_ok
