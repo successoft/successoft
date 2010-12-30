@@ -11,7 +11,8 @@
         %h1
           = link_to "SuccesSoft", root_path, :title => "SuccesSoft"
         #menu
-          = partial 'menu'
+          %ul.nav.top
+            = partial 'menu'
       #content
         = yield
       .clear
@@ -19,14 +20,7 @@
         .footer
           .submenu
             %ul.nav
-              %li
-                %a{:href => "", :title => ""} Página Inicial
-              %li
-                %a{:href => "", :title => ""} Sobre
-              %li
-                %a{:href => "", :title => ""} Serviços/Produtos
-              %li
-                %a{:href => "", :title => ""} Contato
+              = partial 'menu'
           .webmais
             %a{:href => "http://www.webmais.net.br", :title => "Webmais Desenvolvimento para Internet"}
               %img{:alt => "WebMais", :src => "images/webmais.png"}/
