@@ -14,6 +14,11 @@ Bundler.require
 require 'actionpack'
 require 'action_view'
 require 'config/environment'
+
 Configuration.config do |config|
   config.load_paths = %w(. app/helpers app/lib app/views app/requests)
-end
+end                    
+
+# TODO: i think should pass this to Configuration
+I18n.default_locale = 'pt-BR'
+I18n.backend.load_translations(File.expand_path(File.join(__FILE__, '..','config', 'locales', "pt-BR.yml"))) 

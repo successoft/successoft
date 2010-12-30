@@ -8,9 +8,9 @@ class SuccesSoft
   set :root, File.expand_path(File.join(File.dirname(__FILE__), '..', '..'))
   set :views, Proc.new { File.join(root, 'app', "views") }
   set :public, Proc.new { File.join(root, "public") }
-  set :logging, false
+  set :logging, false     
   
-  enable :sessions 
+  enable :sessions
   
   helpers do
     include ActionView::Helpers   

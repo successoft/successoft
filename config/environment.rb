@@ -14,5 +14,5 @@ class Configuration
       $LOAD_PATH.unshift(directory) unless $LOAD_PATH.include?(directory)
       Dir["#{directory}/*.rb"].each { |file| require file }
     end
-  end  
+  end 
 end
