@@ -14,10 +14,15 @@ class SuccesSoft
   
   helpers do
     include Helpers
-  end
-
+  end 
+  
   get '/' do
     haml :index
   end
   
+  %w(index about services contact).each do |page|
+    get "/#{page}" do
+      haml page.to_sym
+    end
+  end 
 end
