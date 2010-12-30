@@ -11,7 +11,8 @@ rescue LoadError
 end
 
 Bundler.require
-
+require 'actionpack'
+require 'action_view'
 require 'config/environment'
 Configuration.config do |config|
   config.load_paths = %w(. app/helpers app/lib app/views app/requests)

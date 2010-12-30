@@ -13,7 +13,9 @@ class SuccesSoft
   enable :sessions 
   
   helpers do
+    include ActionView::Helpers   
     include Helpers
+    include Helpers::Url
   end 
   
   get '/' do
