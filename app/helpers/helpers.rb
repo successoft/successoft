@@ -1,4 +1,4 @@
-module Helpers
+module Helpers  
 
 	def partial(name, options = {})
 		haml "_#{name}".to_sym, options.merge!(:layout => false)
