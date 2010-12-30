@@ -1,0 +1,42 @@
+!!! Strict
+%html{:lang => "pt-br", "xml:lang" => "pt-br", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %link{:href => "stylesheets/main.css", :rel => "stylesheet", :type => "text/css"}/
+    %title Success Soft
+  %body
+    #site
+      #header
+        %h1
+          = link_to "SuccesSoft", root_path, :title => "SuccesSoft"
+        #menu
+          = partial 'menu'
+      #content
+        = yield
+      .clear
+      #footer
+        .footer
+          .submenu
+            %ul.nav
+              %li
+                %a{:href => "", :title => ""} Página Inicial
+              %li
+                %a{:href => "", :title => ""} Sobre
+              %li
+                %a{:href => "", :title => ""} Serviços/Produtos
+              %li
+                %a{:href => "", :title => ""} Contato
+          .webmais
+            %a{:href => "http://www.webmais.net.br", :title => "Webmais Desenvolvimento para Internet"}
+              %img{:alt => "WebMais", :src => "images/webmais.png"}/
+          .clear
+          .address
+            %span Endereço: Lorem ipsum dolor sit amet consectetur, 450, Centro, SP
+            %span Tel.: +55(31)3661.9090 / Cell Phone.: +55(31)9876.8909
+            %p
+              Todos os direitos reservados a
+              %strong SuccesSoft
+              \~ 2010-2011
+          .logo
+            %a{:href => "", :title => ""}
+              %img{:alt => "", :src => "images/logo2.png"}/
