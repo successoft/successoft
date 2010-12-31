@@ -1,5 +1,5 @@
 /*
-*Autor: Diego Muniz e Jefferson Monteiro
+*Autor: Antônio Roberto, Diego Muniz e Jefferson Monteiro
 *Empresa: WebMais Desenvolvimento parar Internet
 */
 
@@ -23,6 +23,7 @@ input{border:none; border:0;}
 #menu .nav {width: 420px; float: right; margin-top: 65px;}
 #menu .nav li {display: inline; margin:0 10px;}
 #menu .top li a {color: #000000;}
+#menu .top li a:hover {border-bottom:2px #35699f solid;}
 
 
 #content {width: 900px; margin: 0 auto; margin-bottom: 170px;}
@@ -42,6 +43,7 @@ input{border:none; border:0;}
 #footer .footer .submenu {float: left; margin-top: 20px;}
 #footer .footer .submenu .nav li {display: inline; margin:0 10px; font-size: 14px;}
 #footer .footer .submenu .nav li a {color: #ffffff;}
+#footer .footer .submenu .nav li a:hover {border-bottom:2px #fff solid;}
 
 #footer .footer .webmais {margin-top: 10px; float:right;}
 
@@ -55,9 +57,9 @@ input{border:none; border:0;}
 #about { }
 #about p { font-size: 14px; color: #3c3c3c; text-align: justify; text-indent: 35px; }
 #about h2 {background: url(../images/int_title_box.png) no-repeat; color: #4c78a7; text-indent: 60px; height: 41px; letter-spacing: -3px; margin: 40px 0; width: 269px; }
-#about .sobre {margin: 0 30px 65px 0;} 
-#about .sobre h2 {} 
-#about .sobre  p { margin-right: 20px;} 
+#about .sobre {margin: 0 30px 65px 0;}
+#about .sobre h2 {}
+#about .sobre  p { margin-right: 20px;}
 #about .metod { }
 #about .metod h2 {}
 #about .metod  p {width: 460px; text-align: justify; float: left; margin-bottom: 30px; }
@@ -77,59 +79,59 @@ input{border:none; border:0;}
 
 #contact {}
 #contact .talk {}
-#contact .talk h2{ background: url(../images/int_title_box.png) no-repeat; height: 41px; width: 269px; text-indent: 60px; color: #4c78a7; margin-bottom: 45px; letter-spacing: -3px; margin-top: 40px; } 
+#contact .talk h2{ background: url(../images/int_title_box.png) no-repeat; height: 41px; width: 269px; text-indent: 60px; color: #4c78a7; margin-bottom: 45px; letter-spacing: -3px; margin-top: 40px; }
 
 #contact .form.contato { font-family: verdana; font-size: 18px;  margin:0 auto; width: 420px;}
 #contact .form.contato form {margin-left: 20px; display: inline; }
-	
 
-	.form.contato input[type=text], .form.contato textarea {
-		border: 1px solid #ccc;
-		padding: 4px;
-		font-family: verdana;
-		font-size: 18px;
-		color: #85a138;
-		background:#e3e3e3;
-		-moz-border-radius: 3px;
-	    -webkit-border-radius: 3px;
-		-opera-border-radius: 3px;
-		width: 410px; 
-		margin: 3px 0 8px 0;
-	}
-	
-	
+
+  .form.contato input[type=text], .form.contato textarea {
+    border: 1px solid #ccc;
+    padding: 4px;
+    font-family: verdana;
+    font-size: 18px;
+    color: #85a138;
+    background:#e3e3e3;
+    -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+    -opera-border-radius: 3px;
+    width: 410px;
+    margin: 3px 0 8px 0;
+  }
+
+
 .form.contato textarea { overflow: auto; height: auto; min-height: 80px; }
-.form.contato textarea.selected, .form.contato input[type=text].selected { border: 2px solid #ba2222; margin: 8px 1px 1px 1px;	}
-	
-	input.submit{ /*modificar o estilo do botao*/
-		font-size:18px;
+.form.contato textarea.selected, .form.contato input[type=text].selected { border: 2px solid #ba2222; margin: 8px 1px 1px 1px;  }
+
+  input.submit{ /*modificar o estilo do botao*/
+    font-size:18px;
         font-family:Verdana;
         color:white;
-		/*font-weight:bold;*/
+    /*font-weight:bold;*/
         background:#4c7196;
         border:0px;
         width:100px;
         height:32px;
-		-moz-border-radius: 3px;
-	    -webkit-border-radius: 3px;
-		cursor: pointer;
-		outline: 0px;
-		padding: 2px;
-		color: #e3e3e3;
-	}
-	
-	input.submit:hover, input.submit:focus {
-		background: #396088;
-	}	
-	
-	input.submit:active {
-		background: #1c436a;
-	}
-	
-.form.contato label { display: block; margin: 1px 0 2px 0; color: #46688a;} 
+    -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+    cursor: pointer;
+    outline: 0px;
+    padding: 2px;
+    color: #e3e3e3;
+  }
+
+  input.submit:hover, input.submit:focus {
+    background: #396088;
+  }
+
+  input.submit:active {
+    background: #1c436a;
+  }
+
+.form.contato label { display: block; margin: 1px 0 2px 0; color: #46688a;}
 .form.contato label span.required { color: red; }
 .form span {font-size:10px; }
-	
+
 
 .submit { margin-top: 30px; float: right; }
 
