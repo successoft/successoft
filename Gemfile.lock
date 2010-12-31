@@ -23,15 +23,19 @@ GEM
       gherkin (~> 2.3.2)
       json (~> 1.4.6)
       term-ansicolor (~> 1.0.5)
+    cucumber-sinatra (0.3.0)
+      templater (>= 1.0.0)
     culerity (0.2.13)
     daemons (1.1.0)
     diff-lcs (1.1.2)
     eventmachine (0.12.10)
+    extlib (0.9.15)
     ffi (0.6.3)
       rake (>= 0.8.7)
     gherkin (2.3.3)
       json (~> 1.4.6)
     haml (3.0.25)
+    highline (1.6.1)
     hpricot (0.8.3)
     i18n (0.5.0)
     infinity_test (1.0.2)
@@ -71,6 +75,10 @@ GEM
       tilt (~> 1.2)
     sinatra-helpers (0.2.0)
       sinatra (>= 1.0)
+    templater (1.0.0)
+      diff-lcs (>= 1.1.2)
+      extlib (>= 0.9.5)
+      highline (>= 1.4.0)
     term-ansicolor (1.0.5)
     thin (1.2.7)
       daemons (>= 1.0.9)
@@ -88,6 +96,7 @@ DEPENDENCIES
   actionpack
   capybara
   cucumber
+  cucumber-sinatra
   daemons
   eventmachine
   haml

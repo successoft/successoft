@@ -16,7 +16,8 @@ gem 'daemons'
 gem 'actionpack'
 
 group :test do
-  gem 'cucumber'
+  gem 'cucumber' 
+  gem 'cucumber-sinatra'
   gem 'rspec', '>= 2.1.0'
   gem 'rack-test', :require => 'rack/test'
   gem 'infinity_test', '1.0.2'
