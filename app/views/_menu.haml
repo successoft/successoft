@@ -1,8 +1,8 @@
 %li
-  = link_to t('menu.home'), root_path, :title => t('menu.home')
+  = link_to t('menu.home'), root_path, {:title => t('menu.home'), :class => (is_current_page?("") ? "active" : "")}
 %li
-  = link_to t('menu.about'), about_path, :title => t('menu.about')
+  = link_to t('menu.about'), about_path, {:title => t('menu.about'), :class => (is_current_page?("about") ? "active" : "")}
 %li
-  = link_to t('menu.services'), services_path, :title => t('menu.services')
+  = link_to t('menu.services'), services_path, {:title => t('menu.services'), :class => (is_current_page?("services") ? "active" : "")}
 %li
-  = link_to t('menu.contact'), contact_path, :title => t('menu.contact')
+  = link_to t('menu.contact'), contact_path, {:title => t('menu.contact'), :class => (is_current_page?("contact") ? "active" : "")}
