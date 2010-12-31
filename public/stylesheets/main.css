@@ -33,10 +33,11 @@ input{border:none; border:0;}
 #content .boxes {margin-top: 40px;}
 #content .boxes .box {width: 270px; height: 225px; float: left; margin-bottom: 170px;}
 #content .boxes .item1 {margin-right: 44px; }
+#content .boxes .item2 {margin-right: 44px; }
 #content .boxes .box h2 {color: #a5ce27; background: url(../images/title_box.png) no-repeat; text-indent: 65px; height: 41px; letter-spacing: -3px;}
 #content .boxes .box p {font-size: 14px; font-style: Arial; margin: 10px 5px; text-align: justify;}
 #content .boxes .box a {float: right; font-size: 14px; font-style: Arial; color: #1975d4; }
-#content .boxes .item2 {}
+#content .boxes .item3 {}
 
 
 #footer {height: 205px; background-color: #10152d; color: #ffffff;}

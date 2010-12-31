@@ -2,9 +2,14 @@ Feature: Navigate in home
   In order to show de home page
   As a guest
   I want see the summary about the SuccesSoft company
+
+  Background:
+    Given I am on the home page    
   
   Scenario: Should see the titles of sessions into boxes
-    Given I am on the home page
-    Then I should see "história" within "h2.about_title"
-      And I should see "serviços" within "h2.service_title"
-      And I should see "clientes" within "h2.customer_title"        
+    Then I should see "história" within ".item1 h2"
+      And I should see "serviços" within ".item2 h2"
+      And I should see "clientes" within ".item3 h2"
+  
+  Scenario: Should mark the active link
+    Then I should see "Página Inicial" within "li a.active"

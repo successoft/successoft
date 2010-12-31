@@ -18,7 +18,7 @@ class SuccesSoft
     include Helpers::Url
   end 
   
-  get '/' do
+  get '/' do 
     haml :index
   end
   
