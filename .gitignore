@@ -4,3 +4,4 @@
 .DS_Store
 .infinity_test
 logs/*.log
+config/mail_config.yml
