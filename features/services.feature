@@ -1,5 +1,5 @@
 Feature: Navigate in the service 
-  In order to show de home page
+  In order to show de service page
   As a guest
   I want see about the service of the SuccesSoft
 
