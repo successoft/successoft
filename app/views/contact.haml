@@ -1,0 +1,27 @@
+#contact
+  .talk
+    %h2 fale conosco
+    .form.contato
+      %form#formuliarioContato{:method => "post", :value => "", :action => sent_mail_path}
+        %label{:for => "campoNome"} Nome*
+        %input#campoNome{:name => "Nome", :title => "Digite seu nome", :type => "text", :value => "", :class => "required"}/
+        %label{:for => "campoEmail"} E-mail*
+        %input#campoEmail{:name => "Email", :title => "Digite seu E-mail, Ex: seuemail@dominio.com.br", :type => "text", :value => "", :class => "required email"}/
+        %label{:for => "campoAssunto"} Assunto*
+        %input#campoAssunto{:name => "Assunto", :title => "Digite o assunto referente a mensagem", :type => "text", :value => "", :class => "required"}/
+        %label{:for => "campoMensagem"} Mensagem*
+        %textarea#campoMensagem{:name => "Mensagem", :title => "Digite a mensagem com no máximo 1000 caracteres", :class => "required"}
+        %span *São obrigatórios.
+        %input.submit{:type => "submit", :value => "enviar"}/
+
+%script{:type => "text/javascript", :src => "javascripts/jquery.validate.min.js"}
+
+:javascript
+  $(function(){$("#formuliarioContato").validate({
+   rules: {
+      email: {
+        required: true,
+        email: true
+      }
+    }
+  })});

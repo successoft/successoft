@@ -137,4 +137,6 @@ input{border:none; border:0;}
 
 .submit { margin-top: 30px; float: right; }
 
+.form.contato label.error {font-size:12px; color:#ff4400; padding-bottom:20px;}
+
 

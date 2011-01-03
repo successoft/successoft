@@ -1,7 +1,10 @@
 pt-BR:
   keywords: "Desenvolvimento, WEB, internet, sistemas, software"
-  menu:
+  menu: &menu
     home: Página Inicial
+    index: Página Inicial
     about: Sobre
     services: Serviços/Produtos
     contact: Contato
+  titles:
+    <<: *menu

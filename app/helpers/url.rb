@@ -15,5 +15,9 @@ module Helpers
     def services_path
       "/services"
     end
+    
+    def sent_mail_path
+      "/sent_mail"
+    end
   end  
 end

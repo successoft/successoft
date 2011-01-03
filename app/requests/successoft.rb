@@ -12,18 +12,24 @@ class SuccesSoft
   
   enable :sessions
   
-  helpers do
+  helpers do    
     include ActionView::Helpers   
     include Helpers
     include Helpers::Url
   end 
   
   get '/' do 
+    @title = I18n.t("titles.home")    
     haml :index
+  end
+  
+  post '/sent_mail' do
+    raise params["Mensagem"].inspect
   end
   
   %w(index about services contact).each do |page|
     get "/#{page}" do
+      @title = I18n.t("titles.#{page}")
       haml page.to_sym
     end
   end 

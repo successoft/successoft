@@ -14,7 +14,7 @@ describe Sinatra::Application do
       root_path.should == '/'
     end
     
-    %w(about services contact).each do |page|
+    %w(about services contact sent_mail).each do |page|
       it "#{page}_path should be equal to /#{page}" do
         send("#{page}_path").should == "/#{page}"        
       end

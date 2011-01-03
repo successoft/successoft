@@ -7,7 +7,8 @@ Feature: Navigate in about page
     Given I am on the about page    
   
   Scenario: Should see the about titles
-    Then I should see "sobre" within ".sobre h2"
+    Then I should see "SuccesSoft - Sobre" within "title"
+      And I should see "sobre" within ".sobre h2"
       And I should see "metodologia" within ".metod h2"
   
   Scenario: Should mark the active link

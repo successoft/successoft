@@ -4,7 +4,9 @@
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
     %meta{:name => "keywords", :content => "#{t('keywords')}"}/
     %link{:href => "stylesheets/main.css", :rel => "stylesheet", :type => "text/css"}/
-    %title Success Soft
+    %script{:type => "text/javascript", :src => "javascripts/jquery-1.4.4.min.js"}
+    %title
+      = "SuccesSoft - #{@title}"
   %body
     #site
       #header
