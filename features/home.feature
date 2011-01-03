@@ -1,13 +1,13 @@
-Feature: Navigate in home
+Feature: Navigate in home 
   In order to show de home page
   As a guest
   I want see the summary about the SuccesSoft company
 
-  Background:
+  Background:                
     Given I am on the home page    
   
   Scenario: Should see the titles of sessions into boxes
-    Then I should see "história" within ".item1 h2"
+    Then I should see "história" within ".item1 h2"  
       And I should see "serviços" within ".item2 h2"
       And I should see "clientes" within ".item3 h2"
   
