@@ -1,6 +1,5 @@
 #!/usr/bin env ruby
-
-source :rubygems
+source :gemcutter
 
 gem 'haml'
 gem 'sinatra-helpers'
@@ -13,7 +12,8 @@ gem 'rack-flash'
 gem 'sass'
 gem 'json'
 gem 'daemons'
-gem 'actionpack'
+gem 'actionpack' 
+gem 'mail', '>= 2.2.13'
 
 group :test do
   gem 'cucumber' 
