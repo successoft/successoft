@@ -14,5 +14,11 @@ class Configuration
       $LOAD_PATH.unshift(directory) unless $LOAD_PATH.include?(directory)
       Dir["#{directory}/*.rb"].each { |file| require file }
     end
-  end 
+  end
+ 
+ def mailer(type = :smtp, options = {})
+   Mail.defaults do
+     delivery_method type, options                         
+   end  
+ end
 end
