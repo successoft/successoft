@@ -8,3 +8,9 @@ pt-BR:
     contact: Contato
   titles:
     <<: *menu
+  messages:
+    notices:
+      contact: Obrigado! em breve estaremos entrando em contato
+    alerts:
+      contact: "Ocorreu um erro ao enviar sua mensagem, tente novamente mais tarde!"
+

@@ -16,6 +16,14 @@
           %ul.nav.top
             = partial 'menu'
       #content
+        - if env['x-rack.flash'][:notice]
+          #flash
+            %h2.notice
+              = env['x-rack.flash'][:notice]
+        - if env['x-rack.flash'][:alert]
+          #flash
+            %h2.alert
+              = env['x-rack.flash'][:alert]
         = yield
       .clear
       #footer
