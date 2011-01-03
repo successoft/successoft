@@ -13,8 +13,17 @@
         %textarea#campoMensagem{:name => "Mensagem", :title => "Digite a mensagem com no máximo 1000 caracteres", :class => "required"}
         %span *São obrigatórios.
         %input.submit{:type => "submit", :value => "enviar"}/
-
-%script{:type => "text/javascript", :src => "javascripts/jquery.validate.min.js"}
+  .info
+    .boxinfo
+      %p R. lorem ipsum, n 506, lorem/SP, 445500-000
+      %p Tel.: +55(31)3661.9090 / Cell Phone.: +55(31)9876.8909
+      %p contato@successoft.com.br
+    .gmaps
+      %iframe{:frameborder => "0", :height => "350", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "http://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=webmais+pedro+leopoldo&amp;ie=UTF8&amp;hq=webmais&amp;hnear=Pedro+Leopoldo+-+Minas+Gerais&amp;ll=-19.620588,-44.043513&amp;spn=0.006295,0.006295&amp;output=embed", :width => "425"}
+      %br/
+      %small
+        %a{:href => "http://maps.google.com.br/maps?f=q&amp;source=embed&amp;hl=pt-BR&amp;geocode=&amp;q=webmais+pedro+leopoldo&amp;ie=UTF8&amp;hq=webmais&amp;hnear=Pedro+Leopoldo+-+Minas+Gerais&amp;ll=-19.620588,-44.043513&amp;spn=0.006295,0.006295", :style => "color:#4c7196;text-align:right"} Exibir mapa ampliado
+  %script{:type => "text/javascript", :src => "javascripts/jquery.validate.min.js"}
 
 :javascript
   $(function(){$("#formuliarioContato").validate({

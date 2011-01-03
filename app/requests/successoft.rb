@@ -23,8 +23,27 @@ class SuccesSoft
     haml :index
   end
   
-  post '/sent_mail' do
-    raise params["Mensagem"].inspect
+  post '/sent_mail' do         
+    mail = Mail.new
+    
+    mail[:from] = params["Email"]
+    mail[:to] = 'forevertonny@gmail.com'
+    mail[:subject] = params["Assunto"]
+    mail[:body] = """
+                    #{params["Mensagem"]}
+                    Enviado por: #{params["Email"]}
+                  """
+    begin
+      if mail.deliver!    
+        flash[:notice] = I18n.t("messages.notices.contact")
+      else                                                                 
+        flash[:alert] = I18n.t("messages.alerts.contact")
+      end
+    rescue
+      flash[:alert] = I18n.t("messages.alerts.contact")      
+    end
+    
+    redirect '/contact'
   end
   
   %w(index about services contact).each do |page|

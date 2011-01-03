@@ -80,10 +80,10 @@ input{border:none; border:0;}
 #services .clientes h2{ background: url(../images/int_title_box.png) no-repeat; height: 41px; width: 269px; text-indent: 60px; color: #4c78a7; margin-bottom: 45px;}
 
 #contact {}
-#contact .talk {}
+#contact .talk {float: left;}
 #contact .talk h2{ background: url(../images/int_title_box.png) no-repeat; height: 41px; width: 269px; text-indent: 60px; color: #4c78a7; margin-bottom: 45px; letter-spacing: -3px; margin-top: 40px; }
 
-#contact .form.contato { font-family: verdana; font-size: 18px;  margin:0 auto; width: 420px;}
+#contact .form.contato { font-family: verdana; font-size: 18px; width: 420px; }
 #contact .form.contato form {margin-left: 20px; display: inline; }
 
 
@@ -98,12 +98,12 @@ input{border:none; border:0;}
       -webkit-border-radius: 3px;
     -opera-border-radius: 3px;
     width: 410px;
-    margin: 3px 0 8px 0;
+    margin: 3px 0 17px 0;
   }
 
 
 .form.contato textarea { overflow: auto; height: auto; min-height: 80px; }
-.form.contato textarea.selected, .form.contato input[type=text].selected { border: 2px solid #ba2222; margin: 8px 1px 1px 1px;  }
+.form.contato textarea.selected, .form.contato input[type=text].selected { border: 2px solid #ba2222; margin: 8px 1px 1px 1px;}
 
   input.submit{ /*modificar o estilo do botao*/
     font-size:18px;
@@ -135,8 +135,17 @@ input{border:none; border:0;}
 .form span {font-size:10px; }
 
 
-.submit { margin-top: 30px; float: right; }
+.submit { margin-top: 55px; float: right; }
+
+#contact .info{}
+#contact .info .boxinfo { background: #e3e3e3; border: 1px solid #ccc; float: left; width: 425px; margin: 155px 10px 10px 30px; -moz-border-radius: 3px; -webkit-border-radius: 3px;}
+#contact .info .boxinfo p{text-indent: 10px; font-family: Verdana; font-size: 13px; padding: 3px; }
+
+#contact .info .gmaps {float: left; margin-left: 30px; margin-bottom: 100px;}
+#contact .info .gmaps a { display: block; color: #4c7196; }
 
 .form.contato label.error {font-size:12px; color:#ff4400; padding-bottom:20px;}
 
-
+#flash h2 { font-family: tahoma; font-size: 14px; padding: 10px; width: 850px; height: auto;  -moz-border-radius: 3px; -webkit-border-radius: 3px;}
+#flash h2.alert{background:#bf8585; border:1px solid #700b0b;}
+#flash h2.notice{background:#a1db93; border:1px solid #428f15;}
