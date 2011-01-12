@@ -7,15 +7,15 @@ Feature: Navigate in the contact
   Background:                
     Given I am on the contact page    
   
-  Scenario: Should see the titles of sessions into boxes
+  Scenario: Sessions title
     Then I should see "SuccesSoft - Contato" within "title"  
-      And I should see "fale conosco" within ".talk h2"  
+      And I should see "Fale Conosco" within ".talk h2"  
 
-  Scenario: Should mark the active link
+  Scenario: Active link
     Then I should see "Contato" within "li a.active"
   
   @javascript
-  Scenario: Validating a form
+  Scenario: Empty form
     When I press "enviar"
     Then I should see "Digite seu nome"
       And I should see "Digite seu E-mail, Ex: seuemail@dominio.com.br"

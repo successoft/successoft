@@ -1,6 +1,6 @@
 #contact
   .talk
-    %h2 fale conosco
+    %h2= t('titles.speak_us') 
     .form.contato
       %form#formuliarioContato{:method => "post", :value => "", :action => sent_mail_path}
         %label{:for => "campoNome"} Nome*

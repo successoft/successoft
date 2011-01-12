@@ -21,7 +21,7 @@ group :test do
   gem 'rspec', '>= 2.1.0'
   gem 'rack-test', :require => 'rack/test'
   gem 'infinity_test', '1.0.2'
-  gem 'capybara'
+  gem 'capybara' 
 end 
 
 group :development do

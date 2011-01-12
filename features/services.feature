@@ -6,11 +6,11 @@ Feature: Navigate in the service
   Background:                
     Given I am on the services page    
   
-  Scenario: Should see the titles of sessions into boxes
-    Then I should see "SuccesSoft - Serviços/Produtos" within "title"  
-      And I should see "serviços / produtos" within ".servicos h2"  
-      And I should see "clientes" within ".clientes h2"
+  Scenario: Sessions title
+    Then I should see "SuccesSoft - Produtos" within "title"  
+      And I should see "Produtos" within ".servicos h2"  
+      And I should see "Quem utiliza?" within ".clientes h2"
 
   
-  Scenario: Should mark the active link
-    Then I should see "Serviços/Produtos" within "li a.active"
+  Scenario: Active link
+    Then I should see "Produtos" within "li a.active"
