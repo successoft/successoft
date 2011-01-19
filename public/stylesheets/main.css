@@ -71,11 +71,16 @@ input{border:none; border:0;}
 #services  {margin-top: 40px; }
 #services h2 { letter-spacing: -3px; }
 #services p { font-size: 14px; color: #3c3c3c; text-align: justify; text-indent: 35px;}
+
 #services .servicos {}
-#services .servicos p { margin: 45px 20px 35px 0; }
-#services .servicos ul {margin: 0 0 55px 35px;}
-#services .servicos ul li {color: #3c3c3c; font-size: 16px;  font-weight: bold; background: url(../images/button.jpg) left bottom no-repeat; text-indent: 15px; margin-bottom: 25px; line-height: 12px; }
-#services .servicos h2{ background: url(../images/int_title_box2.png) no-repeat; height: 41px; width: 345px; text-indent: 60px; color: #4c78a7;}
+#services .servicos h2{ background: url(../images/int_title_box.png) no-repeat; height: 41px; width: 345px; text-indent: 60px; color: #4c78a7; margin-bottom: 40px;}
+#services .servicos .teste {float: left; width: 100px; height: 100px; background: yellow; margin-left: 40px; }
+#services .servicos .products {width: 440px; height: 110px; float: left; margin-bottom: 50px; padding-top: 10px; }
+#services .servicos .products ul {margin-left: 15px; float: left;  width: 270px;}
+#services .servicos .products ul li {color: #3c3c3c;  margin: 10px 30px 10px 0; /*line-height: 12px;*/ }
+#services .servicos .products ul li.title { margin-top: 20px; font-size: 14px;  font-family:Verdana; font-weight: bold; }
+#services .servicos .products ul li.description{font-size: 12px;  font-family: Arial; }
+
 #services .clientes {}
 #services .clientes h2{ background: url(../images/int_title_box.png) no-repeat; height: 41px; width: 269px; text-indent: 60px; color: #4c78a7; margin-bottom: 45px;}
 

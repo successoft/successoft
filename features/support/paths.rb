@@ -14,8 +14,8 @@ module NavigationHelpers
       '/'
     when /the about\s?page/
       '/about'
-    when /the services\s?page/
-      '/services'
+    when /the products\s?page/
+      '/products'
     when /the contact\s?page/
       '/contact'                  
 

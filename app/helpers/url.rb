@@ -12,8 +12,8 @@ module Helpers
       "/contact"
     end
     
-    def services_path
-      "/services"
+    def products_path
+      "/products"
     end
     
     def sent_mail_path

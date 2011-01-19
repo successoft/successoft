@@ -14,7 +14,7 @@ describe Sinatra::Application do
       last_response.should be_ok
     end
     
-    %w(index about services contact).each do |page|
+    %w(index about products contact).each do |page|
       it "should respond to /#{page}" do
         get "/#{page}"
         last_response.should be_ok

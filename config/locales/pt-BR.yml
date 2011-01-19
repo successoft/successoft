@@ -4,7 +4,7 @@ pt-BR:
     home: Página Inicial
     index: Página Inicial
     about: Sobre
-    services: Produtos
+    products: Produtos
     contact: Contato
   titles:
     <<: *menu

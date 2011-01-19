@@ -46,7 +46,7 @@ class SuccesSoft
     redirect '/contact'
   end
   
-  %w(index about services contact).each do |page|
+  %w(index about products contact).each do |page|
     get "/#{page}" do
       @title = I18n.t("titles.#{page}")
       haml page.to_sym
