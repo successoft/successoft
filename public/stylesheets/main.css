@@ -39,6 +39,20 @@ input{border:none; border:0;}
 #content .boxes .box a {float: right; font-size: 14px; font-style: Arial; color: #1975d4; }
 #content .boxes .item3 {}
 
+.how_to_use_imgs {
+  width: 260px;
+  height: 150px;
+  margin: 0 auto;
+}
+.how_to_use_imgs div {
+  width: 260px;
+  height: 150px;
+  position: absolute;
+}
+.how_to_use_imgs .red { background: red;}
+.how_to_use_imgs .blue { background: blue;}
+.how_to_use_imgs .green { background: green;}
+
 
 #footer {height: 205px; background-color: #10152d; color: #ffffff;}
 #footer .footer {width: 900px; margin: 0 auto;}
