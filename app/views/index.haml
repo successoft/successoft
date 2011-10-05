@@ -4,20 +4,20 @@
 .boxes
   .box.item1
     %h2= t("titles.history")
-    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus, risus et elementum bibendum, erat nunc varius nunc, eget condimentum leo ipsum id nunc. Proin posuere mauris ac libero iaculis commodo. Phasellus id nibh augue. Suspendisse id erat tellus.
-    %a{:href => "", :title => ""} leia mais sobre
+    %p A SuccesSoft nasceu da vontade de transformar grandes idéias em excelentes produtos.
+    %a{:href => about_path, :title => "Sobre"} leia mais sobre
   .box.item2
-    %h2= t('titles.products')
-    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus, risus et elementum bibendum, erat nunc varius nunc, eget condimentum leo ipsum id nunc. Proin posuere mauris ac libero iaculis commodo. Phasellus id nibh augue. Suspendisse id erat tellus.
-    %a{:href => "", :title => ""} leia mais sobre
-  .box.item3
     %h2= t('titles.who_we_are')
+    %p A Successoft foi criada com o objetivo de ajudar na sustentabilidade sócio-política, focando no <b>equilíbrio social</b> através da tecnologia, e se tornando um "catalisador" da mudança nas causas sociais.
+    %a{:href => about_path, :title => "Sobre"} leia mais sobre
+  .box.item3
+    %h2= t('titles.products')
     .how_to_use_imgs
       %p Estamos desenvolvendo o nosso primeiro produto.
       / .red
       / .green
       / .blue
-    / %a{:href => "", :title => ""} ver todos
+    %a{:href => products_path, :title => "Produtos"} ver todos
     
 :javascript
     $('.how_to_use_imgs').cycle('fade');
