@@ -8,6 +8,7 @@ pt-BR:
     contact: Contato
   titles:
     <<: *menu
+    who_we_are: "Quem somos?"
     how_use: "Quem utiliza?"
     history: "História"
     speak_us: "Fale Conosco"
