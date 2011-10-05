@@ -19,7 +19,7 @@ mail_conf = YAML.load_file(File.expand_path("config/mail_config.yml"))
 
 Configuration.config do |config|
   config.load_paths = %w(. app/helpers app/lib app/views app/requests)
-  config.mailer :smtp, { :address              => mail_conf["address"],
+  config.mailer :smtp, {    :address              => mail_conf["address"],
                             :port                 => mail_conf["port"],
                             :domain               => mail_conf["domain"],
                             :user_name            => mail_conf["user_name"],
