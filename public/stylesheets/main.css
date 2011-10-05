@@ -17,7 +17,7 @@ input{border:none; border:0;}
 
 #header {width: 900px; margin: 0 auto; height: 125px;}
 #header h1 {width: 294px; float: left;}
-#header h1 a {display: block; background: url(../images/logo3.png) no-repeat; height: 64px; width: 294px; text-indent: -99999px; margin: 35px 0 0 5px; font-size: 0.2px;}
+#header h1 a {display: block; background: url(../images/logo.png) no-repeat; height: 64px; width: 294px; text-indent: -99999px; margin: 35px 0 0 5px; font-size: 0.2px;}
 
 #menu {font-size: 14px; }
 #menu .nav {width: 420px; float: right; margin-top: 65px;}
