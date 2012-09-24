@@ -1,5 +1,5 @@
 pt-BR:
-  keywords: "Startup,Tecnologia,Successoft,Sucesso,successoft,Sucessoft,sucessoft"
+  keywords: "Startup,Tecnologia,Successoft,Sucesso,Software,successoft,Sucessoft,sucessoft"
   menu: &menu
     home: Página Inicial
     index: Página Inicial
@@ -14,7 +14,7 @@ pt-BR:
     speak_us: "Fale Conosco"
   messages:
     notices:
-      contact: Obrigado! em breve estaremos entrando em contato
+      contact: Obrigado! em breve entraremos em contato!
     alerts:
       contact: "Ocorreu um erro ao enviar sua mensagem, tente novamente mais tarde!"
 
