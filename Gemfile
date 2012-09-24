@@ -12,17 +12,16 @@ gem 'rack-flash'
 gem 'sass'
 gem 'json'
 gem 'daemons'
-gem 'actionpack' 
+gem 'actionpack'
 gem 'mail', '>= 2.2.13'
 
 group :test do
-  gem 'cucumber' 
+  gem 'cucumber'
   gem 'cucumber-sinatra'
   gem 'rspec', '>= 2.1.0'
   gem 'rack-test', :require => 'rack/test'
-  gem 'infinity_test', '1.0.2'
-  gem 'capybara' 
-end 
+  gem 'capybara'
+end
 
 group :development do
   gem 'hpricot'
